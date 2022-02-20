@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300;800&family=Roboto:wght@300;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: 'Roboto Slab', serif;
+}
+
+#container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px;
+  /* align-items: center; */
+  border-radius: 1%;
+  font-size: 15px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

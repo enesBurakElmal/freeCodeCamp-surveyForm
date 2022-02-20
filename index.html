@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title" class="text-center">
+        <h1>Survey Form</h1>
+        <p id="description" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dicta!</p>
+      </div>
+      <form>
+        <div class="survey-form">
+          <label>Name</label>
+          <br>
+          <input
+            type="text"
+            class="survey-form"
+            id="name-label"
+            aria-describedby="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="survey-form">
+          <label>Email</label>
+          <br>
+          <input
+            type="email"
+            class="form-control"
+            id="email-label"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="survey-form">
+          <label>Age </label><span>(optional) </span>
+          <br>
+          <input
+            type="number"
+            min="8"
+            max="120"
+            class="form-control"
+            id="number-label"
+            placeholder="Age"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="radiobuttons">
+          <p>Which playgroup is closer to you?</p>
+          <ul style="list-style: none">
+            <li class="radio">
+              <input
+                name="radio-buttons"
+                value="3"
+                type="radio"
+                class="userRatings"
+              /><label>Board Games</label>
+            </li>
+            <li class="radio">
+              <input
+                name="radio-buttons"
+                value="3"
+                type="radio"
+                class="userRatings"
+              /><label>Video Games</label>
+            </li>
+          </ul>
+        </div>
+
+     
+
+        <div class="form-group">
+            <label for="form-platform">Qualification</label>
+            <br>
+            <select class="form-control" id="dropdown">
+              <option>PlayStation Series</option>
+              <option>XBox Series</option>
+              <option>Mobile Platform</option>
+              <option>Desktop</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+    <div>
+        <h4>Preferred game types</h4><ul class="checkboxlabel">
+          <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">MMOrpg</label></li>
+        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">FPS</label></li>
+        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">MOBA</label></li>
+        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Story Mode</label></li>
+        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Web Browser</label></li>
+        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Other</label></li>
+          </ul>
+        </div>
+        <button id="submit" type="submit" class="btn btn-secondary">Submit</button>
+
+    </div>
+  </body>
+</html>

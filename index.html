@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,35 +17,37 @@
     <div id="container">
       <div id="title" class="text-center">
         <h1>Survey Form</h1>
-        <p id="description" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dicta!</p>
+        <p id="description" class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dicta!
+        </p>
       </div>
-      <form>
-        <div class="survey-form">
+      <form class="survey-form">
+        <div id="name">
           <label>Name</label>
-          <br>
+          <br />
           <input
-            type="text"
-            class="survey-form"
+            type="name"
+            class="form-control"
             id="name-label"
-            aria-describedby="name"
             placeholder="Enter your name"
             required
           />
         </div>
-        <div class="survey-form">
+
+        <div id="email">
           <label>Email</label>
-          <br>
+          <br />
           <input
             type="email"
             class="form-control"
-            id="email-label"
+            id="name-label"
             placeholder="Enter your Email"
             required
           />
         </div>
-        <div class="survey-form">
+        <div id="number">
           <label>Age </label><span>(optional) </span>
-          <br>
+          <br />
           <input
             type="number"
             min="8"
@@ -74,32 +82,97 @@
           </ul>
         </div>
 
-     
-
         <div class="form-group">
-            <label for="form-platform">Qualification</label>
-            <br>
-            <select class="form-control" id="dropdown">
-              <option>PlayStation Series</option>
-              <option>XBox Series</option>
-              <option>Mobile Platform</option>
-              <option>Desktop</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-    <div>
-        <h4>Preferred game types</h4><ul class="checkboxlabel">
-          <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">MMOrpg</label></li>
-        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">FPS</label></li>
-        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">MOBA</label></li>
-        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Story Mode</label></li>
-        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Web Browser</label></li>
-        <li class="checkbox" style="list-style: none;"><label> <input name="prefer" value="1" type="checkbox" class="userRatings">Other</label></li>
-          </ul>
+          <label for="form-platform">Qualification</label>
+          <br />
+          <select class="form-control" id="dropdown">
+            <option>PlayStation Series</option>
+            <option>XBox Series</option>
+            <option>Mobile Platform</option>
+            <option>Desktop</option>
+            <option>Other</option>
+          </select>
         </div>
-        <button id="submit" type="submit" class="btn btn-secondary">Submit</button>
 
+        <div class="check-box">
+          <h4>Preferred game types</h4>
+
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="mmorpg"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />MMOrpg</label
+            >
+          </li>
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="fps"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />FPS</label
+            >
+          </li>
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="moba"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />MOBA</label
+            >
+          </li>
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="storymode"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />Story Mode</label
+            >
+          </li>
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="webbrowser"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />Web Browser</label
+            >
+          </li>
+          <li class="checkbox" style="list-style: none">
+            <label>
+              <input
+                name="other"
+                value="1"
+                type="checkbox"
+                class="userRatings"
+              />Other</label
+            >
+          </li>
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <button id="submit" type="submit" class="btn btn-secondary">
+          Submit
+        </button>
+      </form>
     </div>
   </body>
 </html>

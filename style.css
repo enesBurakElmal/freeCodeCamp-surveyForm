@@ -1,28 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300;800&family=Roboto:wght@300;500&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background: #fff;
   font-family: 'Roboto Slab', serif;
+  align-items: center;
+  text-align: center;
 }
 
 #container {
-  max-width: 1200px;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: azure;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
   border: 1px;
-  /* align-items: center; */
+  align-items: center;
   border-radius: 1%;
   font-size: 15px;
 }
 
-#survey-form {
+.radio {
+  left: 15px;
+}
+
+.survey-form {
+  position: relative;
+  margin: 0 auto;
+  padding: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.form-control {
+  align-items: center;
+  text-align: center;
+}
+
+/* .form-group {
+  margin: 0 0 auto;
+} */
+
+.checkbox {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+input:hover {
+  background-color: rgb(26, 25, 25);
 }

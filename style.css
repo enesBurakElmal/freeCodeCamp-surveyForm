@@ -8,7 +8,6 @@ body {
 
 #container {
   max-width: 800px;
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -20,10 +19,11 @@ body {
   align-items: center;
   border-radius: 1%;
   font-size: 15px;
+  padding: 3px;
 }
 
-.radio {
-  left: 15px;
+.userRatings {
+  cursor: pointer;
 }
 
 .survey-form {
@@ -39,15 +39,26 @@ body {
   text-align: center;
 }
 
-/* .form-group {
-  margin: 0 0 auto;
-} */
+.radiobuttons {
+  padding: 3px;
+}
 
 .checkbox {
   display: flex;
   flex-direction: row;
+  padding: 1px;
 }
 
 input:hover {
-  background-color: rgb(26, 25, 25);
+  background-color: black;
+  color: white;
+}
+
+.checkbox:hover {
+  background-color: black;
+  color: white;
+}
+
+#submit {
+  cursor: pointer;
 }
